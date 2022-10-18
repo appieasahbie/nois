@@ -91,7 +91,7 @@ Docs : [Link](https://docs.nois.network/)
 
   + (first check your bank balance)
      
-      noisd query bank balances $NOIS_WALLET_ADDRESS
+         noisd query bank balances $NOIS_WALLET_ADDRESS
       
  (if you recive the tokens let`s create validator)
 
