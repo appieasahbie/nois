@@ -66,11 +66,11 @@ Docs : [Link](https://docs.nois.network/)
 ### Create wallet
  + (Please save all keys on your notepad)
  
-     noisd keys add $WALLET
+       noisd keys add $WALLET
      
  + To recover your old wallet use this command
 
-     noisd keys add $WALLET --recover
+       noisd keys add $WALLET --recover
      
 ### Add wallet and valoper address and load variables into the system
 
