@@ -96,17 +96,17 @@ Docs : [Link](https://docs.nois.network/)
  (if you recive the tokens let`s create validator)
  
 
-  noisd tx staking create-validator \
-  --amount 100000000unois \
-  --from $WALLET \
-  --commission-max-change-rate "0.01" \
-  --commission-max-rate "0.2" \
-  --commission-rate "0.07" \
-  --min-self-delegation "1" \
-  --pubkey  $(noisd tendermint show-validator) \
-  --moniker $NODENAME \
-  --chain-id $NOIS_CHAIN_ID
-  --gas-prices 0.05unois
+    noisd tx staking create-validator \
+    --amount 100000000unois \
+    --from $WALLET \
+    --commission-max-change-rate "0.01" \
+    --commission-max-rate "0.2" \
+    --commission-rate "0.07" \
+    --min-self-delegation "1" \
+    --pubkey  $(noisd tendermint show-validator) \
+    --moniker $NODENAME \
+    --chain-id $NOIS_CHAIN_ID
+    --gas-prices 0.05unois
   
   
 ### Delegate to yourself
