@@ -94,8 +94,20 @@ Docs : [Link](https://docs.nois.network/)
          noisd query bank balances $NOIS_WALLET_ADDRESS
       
  (if you recive the tokens let`s create validator)
+ 
 
-     noisd tx staking create-validator   --amount 100000000unois   --from $WALLET   --commission-max-change-rate "0.01"   --commission-max-rate "0.2"   --commission-rate "0.05"   --min-self-delegation "1"   --pubkey  $(noisd tendermint show-validator)   --moniker XXXXX   --chain-id $NOIS_CHAIN_ID   --gas-prices 0.05unois
+  noisd tx staking create-validator \
+  --amount 100000000unois \
+  --from $WALLET \
+  --commission-max-change-rate "0.01" \
+  --commission-max-rate "0.2" \
+  --commission-rate "0.07" \
+  --min-self-delegation "1" \
+  --pubkey  $(noisd tendermint show-validator) \
+  --moniker $NODENAME \
+  --chain-id $NOIS_CHAIN_ID
+  --gas-prices 0.05unois
+  
   
 ### Delegate to yourself
       noisd tx staking delegate $NOIS_VALOPER_ADDRESS 10000000unois --from=$WALLET --chain-id=$NOIS_CHAIN_ID --gas=auto
